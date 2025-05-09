@@ -6,7 +6,7 @@
 /*   By: mhachem <mhachem@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/06 19:31:37 by mhachem           #+#    #+#             */
-/*   Updated: 2025/05/09 16:51:13 by mhachem          ###   ########.fr       */
+/*   Updated: 2025/05/09 16:53:54 by mhachem          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_handle_type(const char letter, va_list args)
 	else if (letter == 'c')
 		result = ft_putchar(va_arg(args, int));
 	else if (letter == 'p')
-		result = ft_putadress(va_arg(args, void *));
+		result = ft_putaddress(va_arg(args, void *));
 	else if (letter == 'u')
 		result = ft_putunsigned_dec(va_arg(args, unsigned int));
 	else if (letter == 'x')
