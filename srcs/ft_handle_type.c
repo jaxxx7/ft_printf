@@ -6,7 +6,7 @@
 /*   By: mhachem <mhachem@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/06 19:31:37 by mhachem           #+#    #+#             */
-/*   Updated: 2025/05/09 16:53:54 by mhachem          ###   ########.fr       */
+/*   Updated: 2025/05/09 17:33:24 by mhachem          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,10 @@ int	ft_handle_type(const char letter, va_list args)
 	else if (letter == 'u')
 		result = ft_putunsigned_dec(va_arg(args, unsigned int));
 	else if (letter == 'x')
-		result = ft_puthexalower(va_arg(args, unsigned long));
+		result = ft_puthexalower(va_arg(args, unsigned int));
 	else if (letter == 'X')
-		result = ft_puthexaupper(va_arg(args, unsigned long));
+		result = ft_puthexaupper(va_arg(args, unsigned int));
+	else
+		result = 0;
 	return (result);
 }

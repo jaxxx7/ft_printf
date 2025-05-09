@@ -10,7 +10,7 @@ SRC = $(addprefix $(SRC_DIR)/, \
 	ft_putnbr.c \
 	ft_putstr.c \
 	ft_putdecimal.c \
-	ft_putadress.c \
+	ft_putaddress.c \
 	ft_putunsigned_dec.c \
 	ft_puthexalower.c \
 	ft_puthexaupper.c \
